@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: irium-order-manager
+  datasource:
+    url: jdbc:postgresql://localhost:5432/irium
+    username: postgres
+    password: postgres
+  jpa:
+    properties:
+      hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      show-sql: false
+      ddl-auto: update
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: mail@gmail.com
+    password: PWD
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+server:
+  port: 8085
+
